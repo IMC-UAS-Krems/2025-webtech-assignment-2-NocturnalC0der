@@ -49,10 +49,10 @@
     /* Breakpoint */
 @media (max-width: 1050px) { 
 
-    #about1 #about2 { 
+    /* #about1 #about2 { 
         flex-wrap: wrap;
 
-    }
+    } */
 
 }
 
@@ -60,10 +60,7 @@
 /* ============================================================ */
 /* ======================== WHO ARE WE ========================*/
 /* ============================================================ */
-
-
-#about1 {
-    /* Define as flexbox */
+ /* #about1 {
 
     display: flex;
     flex-direction: row; 
@@ -71,7 +68,7 @@
     align-items: center;
     justify-content: space-evenly;
 
-}
+}  */
 
 #about1 img {
     width: 100%;
@@ -80,12 +77,22 @@
     margin: 0 auto;
 }
 
+#we-text {
+    align-self: center;
+}
+
+#we-text article {
+    max-width: 600px;
+    word-spacing: 4px;
+}
+
+/* 
 #about1 .text-block {
     border: 2px solid blue;
     max-width: 500px;
-    font-size: large;
+    font-size: large; */
 
-}
+
 
 /* ============================================================ */
 /* ======================== MISSION & Process ========================*/
