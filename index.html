@@ -3,14 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    /> -->
-    <link rel="stylesheet" href="" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet " href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.css"
+    /> -->
     <title>Adam's Christmas Shelter</title>
   </head>
   <body>
@@ -28,7 +26,6 @@
 
     <!-- About section -->
     <section id="about1">
-      <!-- <div class="container"> -->
       <div class="row">
         <div class="col-sm-12 col-md-6" id="we-img">
           <img src="img/we_picture.jpeg" alt="Picture of us cooking." />
@@ -52,47 +49,91 @@
     </section>
 
     <section id="about2">
-      <div id="mission-block">
-        <h1>Our Mission</h1>
-        <p>
-          "To make sure nobody is left alone in winter's cold, but surrounded by
-          the warmth of community."
-        </p>
-      </div>
+      <div class="row">
+        <div class="col-12" id="mission-block">
+          <h1>Our Mission</h1>
+          <p>
+            "To make sure nobody is left alone in winter's cold, but surrounded by
+            the warmth of community."
+          </p>
+        </div>
+        
+          <div class="col-12" id="process-block">
+            <h1>How It Works</h1>
+            <article>
+              We operate fully on the dontations we recieve from people. The
+              donations are in the form of ingredients to make our meals. The flow
+              looks like this. First, the donors come to our site, choose the
+              ingredients that they want to contribute with, and pay via a
+              traditional internat payment gate. Second, our system is alreated, it
+              interacts with the API's of supermarket chains that offer delivery
+              (TESCO, etc..), and automatically places up the order. Lastly, we wait
+              for the ingredients to get delivered to our doorstep, and cook. Every
+              other day, at 6'oclock in the evening, we open our doors and start the
+              banquet.
+            </article>
 
-      <div id="process-block">
-        <h1>How It Works</h1>
-        <article>
-          We operate fully on the dontations we recieve from people. The
-          donations are in the form of ingredients to make our meals. The flow
-          looks like this. First, the donors come to our site, choose the
-          ingredients that they want to contribute with, and pay via a
-          traditional internat payment gate. Second, our system is alreated, it
-          interacts with the API's of supermarket chains that offer delivery
-          (TESCO, etc..), and automatically places up the order. Lastly, we wait
-          for the ingredients to get delivered to our doorstep, and cook. Every
-          other day, at 6'oclock in the evening, we open our doors and start the
-          banquet.
-        </article>
-
-        <div id="process_icons"></div>
+            <div class="col-12" id="process_icons"></div>
       </div>
     </section>
 
     <!-- Shopping Section with listed ingredients -->
     <section id="shop">
       <h1>Shop the Ingredients</h1>
-      <div class="ingredient"></div>
-      <div class="ingredient"></div>
-      <div class="ingredient"></div>
-      <div class="ingredient"></div>
-      <div class="ingredient"></div>
+      <div id="ingredients-wrapper">
+
+      <!--===========================The Ingredient Element============================== -->
+        <div class="ingredient">
+          <img class="img-fluid" src="img/tuna.webp" alt="">
+          <h3>Tuna</h3>
+        </div>
+        <div class="ingredient">
+          <img class="img-fluid" src="img/salmon.webp" alt="">
+          <div class="ingredient_info_buy">
+            <h3 class="ingredient_name">Salmon</h3>
+            <p class="ingredient_price_per_kg">7 EUR / Kg</p>
+            <div class="ingredient_quantity_price">
+              <div class="quantity">
+                <label for="q_range1">
+                  Quantity: 
+                  <output for="q_range1" id="range1Value"></output> 
+                </label>
+                <input 
+                    id="q_range1"
+                    type="range"
+                    class="form-range"
+                    min="0.5"
+                    max = 10
+                    step = "0.5"
+                  > <!-- This line from bootstrap docs -- source 1  -->
+              </div>
+
+              <div class="price">
+                <label for="price1">Price:</label>
+                <h4 id="price1">50</h4>
+
+              </div>
+
+            </div>
+            <button class="cart btn btn-success">ADD TO CART</button>
+          </div>
+        </div>
+        <!-- ======================================== -->
+
+      </div>
     </section>
 
     <!-- Dynamic payment section that will be changing (hidden in the start) -->
-    <section id="dynamic_payment"></section>
+    <section id="dynamic_payment">
+
+
+
+
+    </section>
 
     <!-- Adress, Contact info -->
     <footer></footer>
   </body>
+
+  <script src="js/script.js"></script>
 </html>

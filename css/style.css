@@ -79,6 +79,9 @@
 
 #we-text {
     align-self: center;
+    max-width: 600px;
+    padding-left: 10px;
+    border: 1px solid blue
 }
 
 #we-text article {
@@ -126,5 +129,54 @@
     border: 2px solid black;
     width: 100%;
     font-size: large;
+
+}
+
+
+/* ============================================================ */
+/* ======================== SHOPPING GRID ========================*/
+/* ============================================================ */
+
+#ingredients-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ingredient {
+    border: 2px solid blue
+
+}
+
+.ingredient_info_buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+.ingredient_quantity_price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.ingredient_quantity_price input {
+    max-width: 500px;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
