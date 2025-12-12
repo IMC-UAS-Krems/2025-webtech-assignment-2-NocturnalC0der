@@ -3,5 +3,6 @@
 
 
 ### Source 2 - Geeks for Geeks
+This is the input slider.
 - https://www.geeksforgeeks.org/python/js-equivalent-to-python-list-comprehension/
 

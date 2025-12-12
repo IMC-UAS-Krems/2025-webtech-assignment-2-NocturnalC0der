@@ -137,13 +137,25 @@
 /* ======================== SHOPPING GRID ========================*/
 /* ============================================================ */
 
+/* .card-ingredient {
+    
+} */
+
 #ingredients-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
 }
 
-.ingredient {
-    border: 2px solid blue
+.card-ingredient {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    */
+    border: 2px solid blue;
+    /* color: green; */
+    /* width: 100%;
+    height: auto */
+
 
 }
 
@@ -151,19 +163,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 100%;
     gap: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 
 }
 
-
 .ingredient_quantity_price {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    max-width: 600px;
     width: 100%;
     /* border: 2px solid red; */
 }
@@ -178,5 +190,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 200px;
+    width: 100%;
 
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 100px;
+    width: 100%;
+
+}
+
+
+
+/* ============================================================ */
+/* ======================== PAYMENT ========================*/
+/* ============================================================ */
+
+.pay input {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#cart-wrapper {
+    padding: 20px
 }
