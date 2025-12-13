@@ -151,7 +151,7 @@
     align-items: center;
     justify-content: space-evenly;
     */
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     /* color: green; */
     /* width: 100%;
     height: auto */
@@ -159,16 +159,6 @@
 
 }
 
-.ingredient_info_buy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-}
 
 .ingredient_quantity_price {
     display: flex;
@@ -204,15 +194,19 @@
 
 }
 
+.card-body {
+    padding: 10px;;
+}
+
 
 
 /* ============================================================ */
 /* ======================== PAYMENT ========================*/
 /* ============================================================ */
 
-.pay input {
-    padding-top: 10px;
-    padding-bottom: 20px;
+#cart-pay .row {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #cart-wrapper {
