@@ -31,44 +31,19 @@
     height: auto;
     font-size: 6rem;
     word-spacing: 100px;
-    color: red;
-    border: 2px solid black;
-    /* opacity: 100%; */
-    /* width: 500px;
-    height: 20px; */
+    color: rgb(239, 27, 27);
+
     
 }
 
 
 
-/* ============================================================ */
-/* ======================== BREAKPOINTS ========================*/
-/* ============================================================ */
-
-
-    /* Breakpoint */
-@media (max-width: 1050px) { 
-
-    /* #about1 #about2 { 
-        flex-wrap: wrap;
-
-    } */
-
-}
 
 
 /* ============================================================ */
 /* ======================== WHO ARE WE ========================*/
 /* ============================================================ */
- /* #about1 {
 
-    display: flex;
-    flex-direction: row; 
-
-    align-items: center;
-    justify-content: space-evenly;
-
-}  */
 
 #about1 img {
     width: 100%;
@@ -81,19 +56,13 @@
     align-self: center;
     max-width: 600px;
     padding-left: 10px;
-    border: 1px solid blue
+    /* border: 1px solid blue */
 }
 
 #we-text article {
     max-width: 600px;
     word-spacing: 4px;
 }
-
-/* 
-#about1 .text-block {
-    border: 2px solid blue;
-    max-width: 500px;
-    font-size: large; */
 
 
 
@@ -106,8 +75,7 @@
     flex-direction: column;
     align-items: center;
     align-content: space-between;
-    /* justify-content: space-between; */
-    border: 2px solid red;
+
 }
 
 #mission-block {
@@ -115,20 +83,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 100%;
     font-size: large;
 
 }
 
 #process-block {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    border: 2px solid black;
     width: 100%;
     font-size: large;
+    margin: 10px;
 
 }
 
@@ -138,26 +102,15 @@
 /* ============================================================ */
 
 /* .card-ingredient {
-    
+
 } */
 
 #ingredients-wrapper {
     padding: 10px;
+    margin: 15px;
+    gap: 5px;
 }
 
-.card-ingredient {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    */
-    /* border: 2px solid blue; */
-    /* color: green; */
-    /* width: 100%;
-    height: auto */
-
-
-}
 
 
 .ingredient_quantity_price {
@@ -167,13 +120,12 @@
     align-items: center;
     max-width: 600px;
     width: 100%;
-    /* border: 2px solid red; */
+
 }
 
 .ingredient_quantity_price input {
     max-width: 500px;
     width: 100%;
-    /* border: 2px solid red; */
 }
 
 .quantity {
@@ -195,7 +147,7 @@
 }
 
 .card-body {
-    padding: 10px;;
+    padding: 10px;
 }
 
 
@@ -211,4 +163,19 @@
 
 #cart-wrapper {
     padding: 20px
+}
+
+/* ============================================================ */
+/* ======================== Footer ========================*/
+/* ============================================================ */
+
+#footer {
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: rgb(221, 86, 86);
+}
+
+#footer-quote {
+    text-align: center;
+    padding-top: 30px;
 }
